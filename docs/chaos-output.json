@@ -1,0 +1,50 @@
+{
+  "started_at_utc_epoch": 1794406000.0794537,
+  "duration_seconds": 60.462,
+  "unique_job_requests": 10000,
+  "duplicate_idempotency_requests": 1000,
+  "database_job_count_for_run": 10000,
+  "worker_processes": 8,
+  "worker_kill_events": 3,
+  "worker_log_files": [
+    "docs/chaos-logs/chaos-worker-0-bba0b9af.log",
+    "docs/chaos-logs/chaos-worker-1-96cf8815.log",
+    "docs/chaos-logs/chaos-worker-2-9949b04d.log",
+    "docs/chaos-logs/chaos-worker-3-bd11a52e.log",
+    "docs/chaos-logs/chaos-worker-4-1ec452fe.log",
+    "docs/chaos-logs/chaos-worker-5-0ac2687b.log",
+    "docs/chaos-logs/chaos-worker-6-33da2632.log",
+    "docs/chaos-logs/chaos-worker-7-3cf57447.log",
+    "docs/chaos-logs/chaos-worker-0-db8b462b.log",
+    "docs/chaos-logs/chaos-worker-3-3e373db7.log",
+    "docs/chaos-logs/chaos-worker-1-776a06ae.log"
+  ],
+  "side_effect_count": 9604,
+  "retried_job_count": 139,
+  "succeeded_without_effect_job_ids": [],
+  "non_succeeded_with_effect_job_ids": [],
+  "duplicate_effect_groups": 0,
+  "stuck_running_job_ids": [],
+  "queued_job_ids_at_end": [],
+  "attempts_over_limit_job_ids": [],
+  "duplicate_idempotency_checks_passed": 1000,
+  "cancel_request_count": 270,
+  "final_status_counts": {
+    "queued": 0,
+    "running": 0,
+    "succeeded": 9604,
+    "failed": 0,
+    "cancelled": 396
+  },
+  "invariants": {
+    "no_job_lost": true,
+    "no_duplicate_committed_effect": true,
+    "side_effect_status_consistent": true,
+    "no_stuck_running_job": true,
+    "retry_limit_respected": true,
+    "idempotency_replays_return_original_job": true,
+    "cancel_requests_processed_or_won_by_completion": true,
+    "all_jobs_terminal": true
+  },
+  "passed": true
+}

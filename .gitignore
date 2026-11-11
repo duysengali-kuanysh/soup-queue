@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.env
+*.db
+*.sqlite3
+.coverage
+htmlcov/
+.DS_Store
+
+# IDE and local files
+.vscode/
+.idea/
+*.log
+
+# Environment and secrets
+.env.*
+!.env.example
+
+# Python environments
+venv/
+env/
+
+# Local notes
+ss.txt
